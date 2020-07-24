@@ -16,7 +16,7 @@
 - Distributed training: [Ray (Tune)](https://ray.io/) OR Weights and Biases
 - Notebook: [JupyterLab](https://jupyter.org/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
 - Training framework: [Tensorflow](https://tensorflow.org) + [Keras](https://keras.io/)
-- Tabular data management: Pandas
+- Tabular data management: [Pandas](https://pandas.pydata.org/)
 
 
 ### Setup guides and docs
@@ -27,7 +27,7 @@
 **Ray (Tune)**
 1. Ray is already installed so first you will need to setup a training cluster or setup your experiment management
 2. [Guide here to setup cluster training](https://docs.ray.io/en/master/tune/tutorials/tune-distributed.html#tune-distributed)
-3.[Guide here to setup parallel training on one machine](https://docs.ray.io/en/master/tune/tutorials/tune-usage.html#parallelism-gpus) 
+3. [Guide here to setup parallel training on one machine](https://docs.ray.io/en/master/tune/tutorials/tune-usage.html#parallelism-gpus) 
 
 **Weights and Biases**
 1. To setup Weights and biases first sign up and create a project or get added to the project
