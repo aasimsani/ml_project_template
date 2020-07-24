@@ -1,1 +1,1 @@
-# orai_ml_template
+# Orai Machine Learning Project Template
