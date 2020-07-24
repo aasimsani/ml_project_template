@@ -3,10 +3,11 @@
 ### Setup steps
 
 1. Use the **Use this template button to create a new repository from this one** 
-2. Initalize a pipenv ``` pipenv install ```
-3. Enter the pipenv shell ``` pipenv shell ```
-4. Install requirements ``` pip3 install -r requirements.txt ```
-5. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+2. Install pipenv ``` pip3 install pipenv
+3. Initalize a pipenv ``` pipenv install ```
+4. Enter the pipenv shell ``` pipenv shell ```
+5. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
+6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
 
 ### Tools in this repository and recommended toolset
 
@@ -44,3 +45,7 @@ Solve by doing the following:
 1. ``` python3 -m pip install ipykernel ```
 2. ``` python3 -m ipykernel install --user ```
 3. Restart Jupyter Lab
+
+**DVC/Tensorboard/JupterLab command not found**
+1. ``` python3 -m <command here> ```
+2. Issue with python versions on the machine
