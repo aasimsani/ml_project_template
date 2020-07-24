@@ -1,0 +1,9 @@
+tensorflow
+ray
+dvc
+wandb
+jupyterlab
+pandas
+numpy
+xlrd
+ipykernel
