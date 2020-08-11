@@ -3,7 +3,7 @@
 ### Setup steps
 
 1. Use the **Use this template button to create a new repository from this one** 
-2. Install pipenv ``` pip3 install pipenv
+2. Install pipenv ``` pip3 install pipenv ```
 3. Initalize a pipenv ``` pipenv install ```
 4. Enter the pipenv shell ``` pipenv shell ```
 5. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
