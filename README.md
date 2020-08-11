@@ -8,13 +8,16 @@
 4. Enter the pipenv shell ``` pipenv shell ```
 5. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
 6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+7. Setup Kite (optional)
+    1. Install nodejs and npm for Jupyter extensions: Ubuntu ```sudo apt-get install nodejs``` for [other platforms](https://nodejs.org/en/download/)
+    2. Setup Kite ```pip3 install jupyter-kite && jupyter labextension install @kiteco/jupyterlab-kite``` 
 
 ### Tools in this repository and recommended toolset
 
 - Data versioning: [DVC](https://www.dvc.org)
 - Model versioning + Training monitoring + Hyperparameter sweeps: [Weights and Biases](https://www.wandb.com/) - Please signup first
 - Distributed training: [Ray (Tune)](https://ray.io/) OR Weights and Biases
-- Notebook: [JupyterLab](https://jupyter.org/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
+- Coding: [JupyterLab](https://jupyter.org/) + [Kite](https://www.kite.com/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
 - Training framework: [Tensorflow](https://tensorflow.org) + [Keras](https://keras.io/)
 - Tabular data management: [Pandas](https://pandas.pydata.org/)
 
@@ -35,6 +38,10 @@
 3. [How to log Keras data?](https://docs.wandb.com/library/integrations/keras)
 4. [How to integrate Ray Tune with Weights and Biases?](https://docs.wandb.com/library/integrations/ray-tune)
 5. [How to use built-in hyperparameter sweep functionality?](https://docs.wandb.com/sweeps)
+
+**Jupyter Lab**
+1. Starting Jupyterlab ```jupyter lab```
+2. [User guide, key mapping and shortcut customization](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html)
 
 ### Troubleshooting
 
