@@ -1,14 +1,20 @@
 # Orai Machine Learning Project Template
 
-### Setup steps
+Here is where you should have the description of the project
 
-1. Use the **Use this template button to create a new repository from this one** 
-2. Install pipenv ``` pip3 install pipenv ```
-3. Initalize a pipenv ``` pipenv install ```
-4. Enter the pipenv shell ``` pipenv shell ```
-5. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
-6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
-7. Setup Kite (optional)
+### What is in this reporitory? 
+1. Some things about the project
+
+## Setup steps
+
+Template version: 1.1
+0. Use the **Use this template button to create a new repository from this one** 
+1. Install pipenv ``` pip3 install pipenv ```
+2. Initalize a pipenv ``` pipenv install ```
+3. Enter the pipenv shell ``` pipenv shell ```
+4. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
+5. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+6. Setup Kite (optional)
     1. Install nodejs and npm for Jupyter extensions: Ubuntu ```sudo apt-get install nodejs``` for [other platforms](https://nodejs.org/en/download/)
     2. Setup Kite ```pip3 install jupyter-kite && jupyter labextension install @kiteco/jupyterlab-kite``` 
 
