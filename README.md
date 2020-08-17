@@ -1,4 +1,5 @@
 # Orai Machine Learning Project Template
+**V1.1**
 
 Here is where you should have the description of the project
 
@@ -6,9 +7,8 @@ Here is where you should have the description of the project
 1. Some things about the project
 
 ## Setup steps
+Use the **Use this template** button to create a new repository from this one
 
-Template version: 1.1
-0. Use the **Use this template button to create a new repository from this one** 
 1. Install pipenv ``` pip3 install pipenv ```
 2. Initalize a pipenv ``` pipenv install ```
 3. Enter the pipenv shell ``` pipenv shell ```
