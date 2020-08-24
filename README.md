@@ -64,9 +64,4 @@ Solve by doing the following:
 2. Issue with python versions on the machine
 
 **Can't access jupyter from local machine after cloud deployment**
-1. Install nginx
-2. Remove the default config ```sudo rm /etc/nginx/sites-enabled/default```
-3. Copy the file to config store ```sudo cp server.conf /etc/nginx/sites-available```/
-4. Link the config file to the second config location ```sudo ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server.conf```
-5. Restart nginx ```sudo service nginx restart```
-6. Run Jupyter Lab ```jupyter lab --no-browser --ip=0.0.0.0 --port=8888```
+1. Run Jupyter Lab ```jupyter lab --no-browser --ip=0.0.0.0 --port=8888```
