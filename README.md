@@ -26,6 +26,7 @@ Use the **Use this template** button to create a new repository from this one
 - Coding: [JupyterLab](https://jupyter.org/) + [Kite](https://www.kite.com/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
 - Training framework: [Tensorflow](https://tensorflow.org) + [Keras](https://keras.io/)
 - Tabular data management: [Pandas](https://pandas.pydata.org/)
+- Plotting: [Matplotlib](https://matplotlib.org/) [Plotly](https://plotly.com/python/)
 
 
 ### Setup guides and docs
