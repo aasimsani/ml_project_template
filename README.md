@@ -1,4 +1,4 @@
-# Orai Machine Learning Project Template
+# Machine Learning Project Template
 **V1.1**
 
 Here is where you should have the description of the project
