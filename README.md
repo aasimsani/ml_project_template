@@ -8,7 +8,8 @@ Here is where you should have the description of the project
 
 ## Setup steps
 Use the **Use this template** button to create a new repository from this one
-Tested on 
+
+**Tested on:** 
 * Ubuntu 18.04 with Nvidia K80
     * Azure Data Science Virtual machine template
 * Ubuntu 20.04 with Nvidia GEFORCE RTX 2070 SUPER
