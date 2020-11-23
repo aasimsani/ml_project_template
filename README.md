@@ -1,5 +1,5 @@
 # Machine Learning Project Template
-**V1.1**
+**V1.3**
 
 Here is where you should have the description of the project
 
@@ -8,22 +8,35 @@ Here is where you should have the description of the project
 
 ## Setup steps
 Use the **Use this template** button to create a new repository from this one
+Tested on 
+* Ubuntu 18.04 with Nvidia K80
+    * Azure Data Science Virtual machine template
+* Ubuntu 20.04 with Nvidia GEFORCE RTX 2070 SUPER
 
-1. Install pipenv ``` pip3 install pipenv ```
-2. Initalize a pipenv ``` pipenv install ```
-3. Enter the pipenv shell ``` pipenv shell ```
-4. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
-5. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
-6. Setup Kite (optional)
-    1. Install nodejs and npm for Jupyter extensions: Ubuntu ```sudo apt-get install nodejs``` for [other platforms](https://nodejs.org/en/download/)
-    2. Setup Kite ```pip3 install jupyter-kite && jupyter labextension install @kiteco/jupyterlab-kite``` 
+NOTE: Both setups assume that your your CUDA and GPU drivers work if not check troubleshooting below
+
+#### Option 1: Anaconda (recommended)
+1. Install Anaconda
+2. Initialize conda environment ```conda create -n <env name>```
+3. Activate conda environment ```conda activate <env name>```
+4. Installing packages
+4.1 Install via conda ```conda install -c conda-forge -c bioconda --file=requirements_manual.txt``` (If this doesn't work then try 4.2)
+4.2 Install via pip - Follow Option 2 from this step 
+5. If your machine has a supported GPU (list here) then ```pip3 install --user install tensorflow-gpu```
+6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+
+#### Option 2: Directly on machine
+1. Install requirements ``` pip3 install --user -r requirements_manual.txt ```
+2. If your machine has a supported GPU (list here) then ```pip3 install --user install tensorflow-gpu```
+3. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+
 
 ### Tools in this repository and recommended toolset
 
 - Data versioning: [DVC](https://www.dvc.org)
 - Model versioning + Training monitoring + Hyperparameter sweeps: [Weights and Biases](https://www.wandb.com/) - Please signup first
 - Distributed training: [Ray (Tune)](https://ray.io/) OR Weights and Biases
-- Coding: [JupyterLab](https://jupyter.org/) + [Kite](https://www.kite.com/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
+- Coding: [JupyterLab](https://jupyter.org/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
 - Training framework: [Tensorflow](https://tensorflow.org) + [Keras](https://keras.io/)
 - Tabular data management: [Pandas](https://pandas.pydata.org/)
 - Plotting: [Matplotlib](https://matplotlib.org/) [Plotly](https://plotly.com/python/)
@@ -66,3 +79,12 @@ Solve by doing the following:
 
 **Can't access jupyter from local machine after cloud deployment**
 1. Run Jupyter Lab ```jupyter lab --no-browser --ip=0.0.0.0 --port=8888```
+
+
+**GPU driver/ tensorflow-gpu issues**
+1. Check which GPU you have
+2. Check if you have installed the correct version of tensorflow-gpu for the drivers + CUDA installed 
+3. Check if you also have the right version of CUDA installed for tensorflow-gpu
+4. If nothing works try a pre-built VM template on the cloud
+
+
