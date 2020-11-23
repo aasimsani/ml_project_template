@@ -20,8 +20,8 @@ NOTE: Both setups assume that your your CUDA and GPU drivers work if not check t
 2. Initialize conda environment ```conda create -n <env name>```
 3. Activate conda environment ```conda activate <env name>```
 4. Installing packages
-4.1 Install via conda ```conda install -c conda-forge -c bioconda --file=requirements_manual.txt``` (If this doesn't work then try 4.2)
-4.2 Install via pip - Follow Option 2 from this step 
+   4.1 Install via conda ```conda install -c conda-forge -c bioconda --file=requirements_manual.txt``` (If this doesn't work then try 4.2)
+   4.2 Install via pip - Follow Option 2 from this step 
 5. If your machine has a supported GPU (list here) then ```pip3 install --user install tensorflow-gpu```
 6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
 
