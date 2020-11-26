@@ -1,5 +1,5 @@
 # Machine Learning Project Template
-**V1.3**
+**V1.4**
 
 Here is where you should have the description of the project
 
@@ -12,6 +12,7 @@ Use the **Use this template** button to create a new repository from this one
 **Tested on:** 
 * Ubuntu 18.04 with Nvidia K80
     * Azure Data Science Virtual machine template
+* Ubuntu 18.04 with Nvidia V100
 * Ubuntu 20.04 with Nvidia GEFORCE RTX 2070 SUPER
 
 NOTE: Both setups assume that your your CUDA and GPU drivers work if not check troubleshooting below
@@ -23,7 +24,7 @@ NOTE: Both setups assume that your your CUDA and GPU drivers work if not check t
 4. Installing packages
    1. Install via conda ```conda install -c conda-forge -c bioconda --file=requirements_manual.txt``` (If this doesn't work then try 4.2)
    2. Install via pip - Follow Option 2 from this step 
-5. If your machine has a supported GPU ([list here](https://www.tensorflow.org/install/gpu)) then ```pip3 install --user install tensorflow-gpu```
+5. If your machine has a supported GPU ([list here](https://developer.nvidia.com/cuda-gpus)) then ```conda install tensorflow-gpu```
 6. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
 
 #### Option 2: Directly on machine
@@ -83,9 +84,11 @@ Solve by doing the following:
 
 
 **GPU driver/ tensorflow-gpu issues**
-1. Check which GPU you have
-2. Check if you have installed the correct version of tensorflow-gpu for the drivers + CUDA installed 
-3. Check if you also have the right version of CUDA installed for tensorflow-gpu
-4. If nothing works try a pre-built VM template on the cloud
+1. Check which GPU you have on the machine and [make sure it's supported](https://developer.nvidia.com/cuda-gpus)
+2. Install CUDA if you don't have it installed the best way to do this is to just do ```conda install tensorflow-gpu``` and it should take care of itself.
+3.If the above doesn't work check if you have installed the correct version of [tensorflow-gpu for installed CUDA drivers](https://www.tensorflow.org/install/source#gpu). ```nvidia-smi```
+4. Check which version of GPU drivers are needed for the GPU and the supported CUDA versions for the drivers from [here](https://docs.nvidia.com/deploy/cuda-compatibility/index.html).
+5. When you have found the right version follow this [guide](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130) and replace the CUDA driver files in the commands with the right versions. 
+5. If nothing works try a pre-built VM template on the cloud
 
 
