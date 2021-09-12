@@ -1,5 +1,5 @@
 # Machine Learning Project Template
-**V1.4.1**
+**V1.4.3**
 
 Here is where you should have the description of the project
 
