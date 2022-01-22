@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # Remove DVC sensitive data 
-.dvc/
+.dvc/#Ignoring config files
+config/*
