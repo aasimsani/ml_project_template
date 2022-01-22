@@ -7,3 +7,5 @@ numpy
 ipykernel
 matplotlib
 plotly
+fastapi
+uvicorn
