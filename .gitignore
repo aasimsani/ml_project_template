@@ -133,3 +133,5 @@ dmypy.json
 config/*
 #Ignoring config files
 config/*
+#Ignoring config files
+config/*
