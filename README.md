@@ -17,16 +17,18 @@ Use the **Use this template** button to create a new repository from this one
 
 NOTE: Both setups assume that your your CUDA and GPU drivers work if not check troubleshooting below
 
+#### Prerequisites:
+1. Python3
+2. [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
 #### Option 1: Anaconda (recommended)
-1. Install Anaconda
-2. Initialize conda environment ```conda create -n <env name>```
-3. Activate conda environment ```conda activate <env name>```
-4. Installing packages
-   1. Installing via conda
-    - No GPU ```conda install -c pytorch -c conda-forge -c bioconda --file=requirements_conda.txt``` (If this doesn't work then try 4.2)
-    - With GPU support ```conda install -c pytorch -c conda-forge -c bioconda --file=requirements_conda_gpu.txt``` (If this doesn't work then try 4.2)
-   2. Install via pip - Follow Option 2 from this step 
-5. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
+1. Initialize conda environment ```conda create -n <env name>```
+2. Activate conda environment ```conda activate <env name>```
+3. To install PyTorch for your OS follow instructions [here](https://pytorch.org/get-started/locally/) (they keep changing it so it's hard to standardize)
+3. Installing packages
+    - ```conda install -c pytorch -c conda-forge -c bioconda --file=requirements.txt```
+    - (If this doesn't work then try 4.2)
+4. Setup DVC and other libraries ``` chmod 755 setup.sh; ./setup.sh ```
 
 #### Option 2: Directly on machine
 1. Install requirements ``` pip3 install --user -r requirements.txt ```
