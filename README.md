@@ -47,7 +47,8 @@ NOTE: Both setups assume that your your CUDA and GPU drivers work if not check t
 - Coding: [JupyterLab](https://jupyter.org/) or if you want free GPUs and data privacy isn't an issue [Colab](http://colab.research.google.com/)
 - Training framework: [Pytorch](http://pytorch.org/) + [PyTorchLightning](https://www.pytorchlightning.ai/)
 - Tabular data management: [Pandas](https://pandas.pydata.org/)
-- Plotting: [Matplotlib](https://matplotlib.org/) [Plotly](https://plotly.com/python/)
+- Plotting: [Matplotlib](https://matplotlib.org/) + [Plotly](https://plotly.com/python/)
+- Deployment: [FastAPI](https://fastapi.tiangolo.com/)
 
 
 ### Setup guides and docs
