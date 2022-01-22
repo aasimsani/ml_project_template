@@ -131,3 +131,5 @@ dmypy.json
 # Remove DVC sensitive data 
 .dvc/#Ignoring config files
 config/*
+#Ignoring config files
+config/*
